@@ -1,0 +1,608 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ЛапаGO — профессиональный выгул собак и забота о домашних питомцах в Алматы.">
+    <title>ЛапаGO — прогулки с заботой</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ДЕКОРАТИВНЫЙ ЖИВОЙ ФОН -->
+    <div class="background-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
+    <!-- ШАПКА -->
+    <header class="header" id="home">
+        <div class="container nav">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span>Лапа<span class="logo-green">GO</span></span>
+            </a>
+
+            <nav class="menu" id="menu">
+                <a href="#home">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#steps">Как это работает</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
+            <a href="#contacts" class="btn btn-small">Заказать выгул</a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Открыть меню" aria-expanded="false"
+                    aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ПЕРВЫЙ ЭКРАН -->
+        <section class="hero section" id="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        Забота о питомцах в Алматы
+                    </span>
+
+                    <h1>
+                        Ваш питомец гуляет —
+                        <span class="text-green">вы занимаетесь</span>
+                        своими делами
+                    </h1>
+
+                    <p class="hero-description">
+                        Профессиональный выгул собак и забота
+                        о домашних питомцах в Алматы.
+                        С любовью, вниманием и фотоотчётом.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contacts" class="btn">
+                            Заказать прогулку <span>→</span>
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            Посмотреть услуги
+                        </a>
+                    </div>
+
+                    <div class="hero-social-proof">
+                        <div class="avatar-stack">
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=90&q=80"
+                                 alt="Собака золотистого окраса">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=90&q=80"
+                                 alt="Маленькая собака">
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=90&q=80"
+                                 alt="Счастливая собака">
+                        </div>
+                        <div>
+                            <strong>Хвостики довольны!</strong>
+                            <p>Каждая прогулка — с заботой 🐶</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- ГЛАВНАЯ ФОТОГРАФИЯ СОБАКИ -->
+                    <div class="hero-image-wrap">
+                        <img
+                            class="hero-image"
+                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1100&q=85"
+                            alt="Счастливая собака на прогулке с человеком"
+                        >
+                    </div>
+
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon">💚</span>
+                        <div>
+                            <strong>Всё под контролем</strong>
+                            <p>Фото после прогулки</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <span class="big-paw">🐾</span>
+                        <div>
+                            <strong>30–60 минут</strong>
+                            <p>Активного веселья</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-decoration">✳</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- УСЛУГИ -->
+        <section class="section services" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ЧТО МЫ ПРЕДЛАГАЕМ</span>
+                    <h2>Забота на <span class="text-green">четырёх лапах</span></h2>
+                    <p>Всё необходимое, чтобы ваш любимец был счастлив.</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon icon-green">🐕</div>
+                        <h3>Индивидуальный выгул</h3>
+                        <p>30 или 60 минут прогулки в комфортном темпе.</p>
+                        <a href="#prices" class="card-link">Выбрать прогулку →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon icon-orange">🐾</div>
+                        <h3>Выгул двух питомцев</h3>
+                        <p>Внимание и движение сразу для двух хвостиков.</p>
+                        <a href="#contacts" class="card-link">Узнать подробнее →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon icon-yellow">🏠</div>
+                        <h3>Присмотр за питомцем</h3>
+                        <p>Побудем рядом, поиграем и позаботимся дома.</p>
+                        <a href="#contacts" class="card-link">Узнать подробнее →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon icon-purple">✈️</div>
+                        <h3>Зооняня на время отъезда</h3>
+                        <p>Позаботимся о любимце, пока вы в поездке.</p>
+                        <a href="#contacts" class="card-link">Узнать подробнее →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon icon-pink">🦴</div>
+                        <h3>Кормление и уход</h3>
+                        <p>Покормим по расписанию и уделим внимание.</p>
+                        <a href="#contacts" class="card-link">Узнать подробнее →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon icon-blue">📸</div>
+                        <h3>Фотоотчёт после прогулки</h3>
+                        <p>Увидите, как прошёл день вашего любимца.</p>
+                        <a href="#contacts" class="card-link">Заказать →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- КАК ЭТО РАБОТАЕТ -->
+        <section class="section steps-section" id="steps">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ПРОСТО И УДОБНО</span>
+                    <h2>Три шага до <span class="text-green">счастливого хвоста</span></h2>
+                    <p>Мы всё организуем — вам остаётся только наслаждаться результатом.</p>
+                </div>
+
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-icon">📝</div>
+                        <h3>Оставляете заявку</h3>
+                        <p>Указываете адрес, время и особенности питомца.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-icon">🤝</div>
+                        <h3>Выбираем догситтера</h3>
+                        <p>Подбираем специалиста с учётом ваших пожеланий.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-icon">🐶</div>
+                        <h3>Питомец гуляет</h3>
+                        <p>Ваш любимец гуляет, а вы получаете фотоотчёт.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОЧЕМУ МЫ -->
+        <section class="section why-us">
+            <div class="container why-grid">
+
+                <div class="why-image-wrap">
+                    <!-- ФОТО СОБАКИ ДЛЯ БЛОКА ПРЕИМУЩЕСТВ -->
+                    <img
+                        src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&q=85"
+                        alt="Собака отдыхает на свежем воздухе"
+                        class="why-image"
+                    >
+                    <div class="image-note">
+                        <span>💚</span>
+                        <div>
+                            <strong>Забота в каждом шаге</strong>
+                            <p>Как для своего питомца</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-content">
+                    <span class="eyebrow">ПОЧЕМУ ЛАПАГО?</span>
+                    <h2>Вы спокойны. <span class="text-green">Хвостик счастлив.</span></h2>
+                    <p class="why-description">
+                        Мы понимаем, что питомец — часть семьи.
+                        Поэтому делаем каждую прогулку безопасной,
+                        интересной и комфортной.
+                    </p>
+
+                    <div class="benefits-list">
+                        <div class="benefit">
+                            <span class="benefit-check">✓</span>
+                            <div>
+                                <h3>Проверенные догситтеры</h3>
+                                <p>Внимательно подходим к выбору специалистов.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit">
+                            <span class="benefit-check">✓</span>
+                            <div>
+                                <h3>Фотоотчёт после прогулки</h3>
+                                <p>Вы знаете, как прошла прогулка.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit">
+                            <span class="benefit-check">✓</span>
+                            <div>
+                                <h3>Работаем 7 дней в неделю</h3>
+                                <p>Помогаем организовать выгул ежедневно.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit">
+                            <span class="benefit-check">✓</span>
+                            <div>
+                                <h3>Заботимся как о своём</h3>
+                                <p>Учитываем привычки и характер питомца.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ЦЕНЫ -->
+        <section class="section prices-section" id="prices">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ПОНЯТНЫЕ ЦЕНЫ</span>
+                    <h2>Выбирайте свою <span class="text-green">прогулку</span></h2>
+                    <p>Никаких сложных тарифов — только забота и движение.</p>
+                </div>
+
+                <div class="prices-grid">
+
+                    <article class="price-card">
+                        <div class="price-emoji">🐕</div>
+                        <h3>Быстрая прогулка</h3>
+                        <p class="price-description">Для ежедневной активности.</p>
+                        <div class="price"><span>2 500</span> ₸</div>
+                        <p class="price-time">30 минут</p>
+                        <ul>
+                            <li>✓ Индивидуальный выгул</li>
+                            <li>✓ Забота и внимание</li>
+                            <li>✓ Фотоотчёт</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn-outline price-button">Заказать</a>
+                    </article>
+
+                    <article class="price-card price-featured">
+                        <span class="popular-label">Популярный выбор</span>
+                        <div class="price-emoji">🐕‍🦺</div>
+                        <h3>Большая прогулка</h3>
+                        <p class="price-description">Больше времени для приключений.</p>
+                        <div class="price"><span>4 000</span> ₸</div>
+                        <p class="price-time">60 минут</p>
+                        <ul>
+                            <li>✓ Индивидуальный выгул</li>
+                            <li>✓ Активные игры</li>
+                            <li>✓ Фотоотчёт</li>
+                        </ul>
+                        <a href="#contacts" class="btn price-button">Заказать</a>
+                    </article>
+
+                    <article class="price-card">
+                        <div class="price-emoji">🏡</div>
+                        <h3>Забота на день</h3>
+                        <p class="price-description">Когда вам нужно уехать.</p>
+                        <div class="price"><span>от 7 000</span> ₸</div>
+                        <p class="price-time">В день</p>
+                        <ul>
+                            <li>✓ Присмотр за питомцем</li>
+                            <li>✓ Кормление и уход</li>
+                            <li>✓ Отчёт о питомце</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn-outline price-button">Заказать</a>
+                    </article>
+
+                </div>
+                <p class="price-disclaimer">
+                    Стоимость дополнительных услуг и выгула двух питомцев
+                    уточняйте при оформлении заявки.
+                </p>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="section reviews-section" id="reviews">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">ТЁПЛЫЕ СЛОВА</span>
+                    <h2>Хвостики рекомендуют <span class="text-green">нас</span></h2>
+                    <p>Примеры отзывов для демонстрации оформления сайта.</p>
+                </div>
+
+                <div class="reviews-grid">
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <!-- ФОТО СОБАКИ РОККИ -->
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=140&q=80"
+                                 alt="Собака Рокки" class="review-avatar">
+                            <div>
+                                <h3>Алина</h3>
+                                <span>Алматы · хозяйка Рокки</span>
+                            </div>
+                            <span class="review-paw">🐾</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>«Первый раз оставили Рокки, переживали. После фотоотчёта поняли, что он прекрасно проводит время!»</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <!-- ФОТО СОБАКИ -->
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=140&q=80"
+                                 alt="Маленькая собака" class="review-avatar">
+                            <div>
+                                <h3>Дамир</h3>
+                                <span>Алматы · хозяин Бони</span>
+                            </div>
+                            <span class="review-paw">🐾</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>«Очень удобно, когда весь день на работе. Боня возвращается довольная, а я получаю красивые фотографии!»</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <!-- ФОТО СОБАКИ -->
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=140&q=80"
+                                 alt="Весёлая собака" class="review-avatar">
+                            <div>
+                                <h3>Мадина</h3>
+                                <span>Алматы · хозяйка Чарли</span>
+                            </div>
+                            <span class="review-paw">🐾</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>«Понравилось внимательное отношение к Чарли. Учли все наши пожелания по прогулке. Спасибо!»</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-top">
+                            <!-- ФОТО СОБАКИ -->
+                            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=140&q=80"
+                                 alt="Собака на прогулке" class="review-avatar">
+                            <div>
+                                <h3>Артём</h3>
+                                <span>Алматы · хозяин Бакса</span>
+                            </div>
+                            <span class="review-paw">🐾</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p>«Выручили в загруженную неделю. Договорились о времени заранее, всё прошло спокойно и удобно».</p>
+                    </article>
+
+                </div>
+                <p class="reviews-note">Отзывы выше — демонстрационные, замените их реальными отзывами клиентов перед публикацией.</p>
+            </div>
+        </section>
+
+        <!-- ФИНАЛЬНЫЙ ПРИЗЫВ -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <span class="eyebrow">ВРЕМЯ ДЛЯ ПРИКЛЮЧЕНИЙ</span>
+                        <h2>Подарите питомцу хорошую прогулку уже сегодня</h2>
+                        <p>Оставьте заявку — и мы поможем организовать прогулку.</p>
+                        <a href="#contacts" class="btn btn-white">
+                            Заказать выгул <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- ФОТО СОБАКИ В ФИНАЛЬНОМ БЛОКЕ -->
+                    <img
+                        src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=85"
+                        alt="Счастливая собака готова к прогулке"
+                        class="cta-image"
+                    >
+                    <span class="cta-decoration">🐾</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="section contacts-section" id="contacts">
+            <div class="container contacts-grid">
+
+                <div class="contacts-content">
+                    <span class="eyebrow">МЫ НА СВЯЗИ</span>
+                    <h2>Давайте познакомимся <span class="text-green">с вашим хвостиком</span></h2>
+                    <p>Расскажите нам о питомце — поможем подобрать подходящую услугу.</p>
+
+                    <div class="contact-list">
+                        <a href="https://2gis.kz/almaty" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Наш адрес</strong>
+                                <span>Алматы, ул. Жарокова, 124</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+77077777777" class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Позвоните нам</strong>
+                                <span>+7 (707) 777-77-77</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:hello@lapago.kz" class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Напишите нам</strong>
+                                <span>hello@lapago.kz</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Время работы</strong>
+                                <span>Ежедневно: 08:00–22:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3>Заказать прогулку 🐾</h3>
+                    <p>Оставьте свои контакты, и мы обсудим детали.</p>
+
+                    <!-- ДЕМО-ФОРМА: ДЛЯ ОТПРАВКИ НУЖЕН СЕРВЕР ИЛИ СЕРВИС ФОРМ -->
+                    <form id="contactForm">
+                        <label for="clientName">Ваше имя</label>
+                        <input type="text" id="clientName" name="name"
+                               placeholder="Как к вам обращаться?" required>
+
+                        <label for="clientPhone">Номер телефона</label>
+                        <input type="tel" id="clientPhone" name="phone"
+                               placeholder="+7 (___) ___-__-__" required>
+
+                        <label for="petService">Какая услуга нужна?</label>
+                        <select id="petService" name="service" required>
+                            <option value="">Выберите услугу</option>
+                            <option>Выгул 30 минут</option>
+                            <option>Выгул 60 минут</option>
+                            <option>Выгул двух питомцев</option>
+                            <option>Присмотр за питомцем</option>
+                            <option>Зооняня на время отъезда</option>
+                            <option>Кормление и уход</option>
+                        </select>
+
+                        <button type="submit" class="btn form-submit">
+                            Обсудить заказ →
+                        </button>
+                        <p class="form-message" id="formMessage" aria-live="polite"></p>
+                        <small>Нажимая кнопку, вы соглашаетесь на обработку предоставленных данных для связи с вами.</small>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">🐾</span>
+                <span>Лапа<span class="logo-green">GO</span></span>
+            </a>
+
+            <p>Больше прогулок, больше счастливых хвостиков 💚</p>
+
+            <a href="https://www.instagram.com/lapago.kz/"
+               target="_blank" rel="noopener noreferrer" class="instagram-link">
+                Instagram: @lapago.kz ↗
+            </a>
+
+            <div class="footer-bottom">
+                <span>© 2026 ЛапаGO</span>
+                <a href="#home">Наверх ↑</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- МИНИМАЛЬНЫЙ JAVASCRIPT ДЛЯ МОБИЛЬНОГО МЕНЮ И ДЕМО-ФОРМЫ -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = menu.classList.toggle("menu-open");
+            menuToggle.classList.toggle("active", isOpen);
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("menu-open");
+                menuToggle.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById("clientName").value.trim();
+            const phone = document.getElementById("clientPhone").value.trim();
+            const service = document.getElementById("petService").value;
+
+            if (!name || !phone || !service) {
+                formMessage.textContent = "Пожалуйста, заполните все поля.";
+                return;
+            }
+
+            const text = `Здравствуйте! Меня зовут ${name}. Телефон: ${phone}. Услуга: ${service}. Хочу заказать в ЛапаGO.`;
+            const whatsappUrl = "https://wa.me/77077777777?text=" + encodeURIComponent(text);
+
+            formMessage.textContent = "Открываем WhatsApp для отправки заявки…";
+            window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        });
+    </script>
+
+</body>
+</html>
+```
